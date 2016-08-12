@@ -1,0 +1,14 @@
+{
+    "name": "snoblucha/kohana-assets",
+    "description": "Assets pipeline for Kohana Framework. Merges assets into one file.",
+    "type": "kohana-module",
+    "require": {
+        "kohana/core": "^3.3"
+    },
+    "authors": [
+        {
+            "name": "Petr Snobl",
+            "email": "snoblucha@email.cz"
+        }
+    ]
+}
