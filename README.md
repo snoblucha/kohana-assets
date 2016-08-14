@@ -21,3 +21,8 @@ Example Usage:
     JS::footer()->add( 'js/main.js', 'main' );
 
 
+
+In Your template then add 
+
+<link rel="stylesheet" href="/css/index">
+

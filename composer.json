@@ -2,6 +2,7 @@
     "name": "snoblucha/kohana-assets",
     "description": "Assets pipeline for Kohana Framework. Merges assets into one file.",
     "type": "kohana-module",
+    "license": "MIT",
     "require": {
         "kohana/core": "^3.3"
     },
