@@ -24,5 +24,47 @@ Example Usage:
 
 In Your template then add 
 
-<link rel="stylesheet" href="/css/index">
+    <link rel="stylesheet" href="/css/index">
+
+## Config
+
+In config you can define start path for assets group. For exampe for CSS you may define.
+
+    <?php
+    return array(
+        'default' => array(
+            'dir' => 'css',
+            'cached' => false, # should cache asset, disabled for development
+        ),
+
+        'frontend' => array(
+            'dir' => ''
+        ),
+
+        'backend' => array(
+            'dir' => 'admin/css'
+        ),
+
+    );
+
+
+
+## Css
+
+Or any action available for CSS. There are predefined groups for asseets. in `Css` it is `::fe()` for frontend and path `/css/index`,
+`::be()` for backend assets and path `/css/admin` and `::fePrint()` for print stylesheet at `/css/print`
+
+For custom keys there is defined path `/css/get/:id` that retrieves the correct key. For exampe `/css/get/test` will retrieve the
+combined assets for `Css::instance('test')`.
+
+## Js
+
+It has a bit different key predefined. `JS::footer` is intended for combining script for the footer. On the place you put it
+
+    <script src="/scripts/footer"></script>
+
+
+
+
+
 
